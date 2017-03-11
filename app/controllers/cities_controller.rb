@@ -9,8 +9,10 @@ class CitiesController < ApplicationController
 
   # GET /cities/1
   # GET /cities/1.json
-  def show
+  def show 
+    @reviews = @city.reviews
   end
+
 
   # GET /cities/new
   def new
